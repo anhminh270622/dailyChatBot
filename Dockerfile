@@ -1,7 +1,7 @@
 # Stage 1: Build
 FROM gradle:8.7-jdk17-alpine as builder
 WORKDIR /app
-COPY src .
+COPY . .
 RUN gradle clean build -x test
 
 # Stage 2: Run
