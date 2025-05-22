@@ -9,9 +9,9 @@ import lombok.experimental.FieldDefaults;
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class TelegramMessage {
-    private int message_id;
-    private TelegramUser from;
-    private TelegramChat chat;
-    private long date;
-    private String text;
+    int message_id;
+    TelegramUser from;
+    TelegramChat chat;
+    long date;
+    String text;
 }

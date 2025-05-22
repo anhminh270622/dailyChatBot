@@ -1,11 +1,8 @@
 package com.example.dailychatbot.dto.response;
 
-import com.example.dailychatbot.dto.request.TelegramChat;
-import com.example.dailychatbot.dto.request.TelegramUser;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
-
 
 @Data
 @NoArgsConstructor
@@ -13,11 +10,10 @@ import lombok.experimental.FieldDefaults;
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class ExpenseResponse {
+public class UserResponse {
     String id;
-    int message_id;
-    TelegramUser from;
-    TelegramChat chat;
-    long date;
-    String text;
+    String first_name;
+    String last_name;
+    String username;
+    String is_bot;
 }

@@ -1,5 +1,8 @@
 package com.example.dailychatbot.entity;
 
+import com.example.dailychatbot.dto.request.TelegramChat;
+import com.example.dailychatbot.dto.request.TelegramMessage;
+import com.example.dailychatbot.dto.request.TelegramUser;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 import org.springframework.data.annotation.Id;
@@ -16,12 +19,9 @@ import java.util.Date;
 public class Expense {
     @Id
     String id;
-    String message_id;
-    String first_name;
-    String last_name;
-    String username;
-    Long userId;
+    int message_id;
+    TelegramUser from;
+    TelegramChat chat;
+    long date;
     String text;
-    String type;
-    Date date;
 }

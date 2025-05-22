@@ -8,11 +8,8 @@ import lombok.experimental.FieldDefaults;
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class TelegramUser {
-    long id;
-    String first_name;
-    String last_name;
-    String username;
-    boolean is_bot;
-    String language_code;
+
+public class UpdateMessage {
+    long update_id;
+    TelegramMessage message;
 }
