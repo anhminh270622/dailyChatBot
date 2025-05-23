@@ -6,5 +6,5 @@ spring:
       uri: mongodb+srv://anhminh270622:anhminh270622@daily-chatbot.8bmzl6e.mongodb.net/daily-chatbot?retryWrites=true&w=majority&appName=daily-chatbot
 jwt:
   apiKeyToken: "D9LGeo6XIxglpGGsXZddTd8hW5W9Y80hMxbDnPhlFJToI113fVE08WC0I0lM4Btf"
-  botToken: "bot7731653022:AAEYplfDnGqnESbfjm1nTQaM375VbtoBe6c"
+  botToken: "7731653022:AAEYplfDnGqnESbfjm1nTQaM375VbtoBe6c"
 debug: true
